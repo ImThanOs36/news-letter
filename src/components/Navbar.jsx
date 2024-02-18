@@ -1,20 +1,80 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/logo.png'
-import '../styles/Navbar/_navbar.scss'
 import { Link } from 'react-router-dom'
-
+import avatar from '../images/avatar/acc_avatar.jpg'
 function Navbar() {
+
+    const [nav, setNav] = useState(false)
+    const openNav = () => {
+        setNav(!nav);
+        console.log(nav)
+    };
+
+
+
+
+
+
     return (
-        <nav>
+        <div className="navigation">
 
-        <div className="logo"><img src={logo} alt="" /></div>
-        <ul>
-            <li><Link to='/here' relative='path'>click</Link></li>
-        </ul>
+            <header>
+                <div className='left'>
+                    <button onClick={openNav}>
+                        <i className="fa-solid fa-bars"></i>
+                    </button>
+                    <div className="logo">
+                        <img src={logo} alt="mege News" />
+                    </div>
+                    <nav className='navigation'>
+                        <ul>
+                            <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                            <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                            <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div className="right">
+                    <div className="input">
+                        <input type="text" className='desktop_input' placeholder='Search Anything....' />
+                    </div>
+                    <div className="account">
+                        <div>
+                            <img className='avatar' src={avatar} alt="" />
+                            <span>Thanos </span>
+                        </div>
+
+                        <button>
+                            <i className="fa-regular fa-bookmark"></i>
+                        </button>
+                    </div>
+                </div>
+                <div className="tab_input">
+                    <input type="text" placeholder='Search Anything....' />
+                </div>
+            </header>
 
 
-        </nav>
-     
+    
+                <div className={`mobile__nav ${nav ? "open-nav" : ""}`}>
+                    <button className='btn' onClick={openNav}>
+                        <i className="fa-solid fa-xmark" />
+                    </button>
+                    <ul className='links'>
+
+                    <li> <Link to={"/"}>Contact Us</Link>  </li>
+                    <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                    <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                    </ul>
+                </div>
+        
+
+
+        </div>
+
+
+
     )
 }
 

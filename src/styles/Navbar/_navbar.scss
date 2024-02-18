@@ -1,8 +1,186 @@
-div{
-    background-color:lawngreen;
-    font-size: 16px;
+@use "../global" as *;
 
-    color: red;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+header {
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 2em 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // background-color: lightgray;
+    gap: 3em;
+    width: 100%;
 
+    button {
+        background-color: $bg-gray;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 0.5em;
+        border: none;
+    }
+
+    .logo img {
+        width: 150px;
+
+        @media screen and (max-width:$br-mb) {
+            display: none;
+        }
+    }
+
+    .left {
+        display: flex;
+        gap: 2em;
+        justify-content: start;
+        align-items: center;
+
+        button {
+            display: none;
+
+            @media screen and (max-width:$br-tb) {
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width:$br-mb) {
+            gap: 0em;
+        }
+
+    }
+
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 2em;
+    }
+
+    @media screen and (max-width:$br-tb) {
+        padding-bottom: 1em;
+        gap: 1em;
+    }
+}
+
+.navigation ul {
+
+    display: flex;
+    gap: 1em;
+
+    @media screen and (max-width: $br-tb) {
+        display: none;
+    }
+
+
+}
+
+.input {
+    .desktop_input {
+        padding: 1em;
+        border: none;
+        max-width: 300px;
+
+        border-radius: 0.75em;
+        background-color: $bg-gray;
+        color: $text-gray;
+        font-size: 1em;
+
+        @media screen and (max-width: $br-tb ) {
+            display: none;
+        }
+
+        @media screen and (max-width: $br-mb) {
+            display: block;
+
+
+        }
+    }
+}
+
+.tab_input {
+    grid-column: 1 / span 2;
+
+    input {
+        padding: 1em;
+        border: none;
+        border-radius: 0.75em;
+        background-color: $bg-gray;
+        color: $text-gray;
+        font-size: 1em;
+        width: 100%;
+        display: none;
+
+        @media screen and (max-width: $br-tb ) {
+            display: block;
+        }
+
+        @media screen and (max-width: $br-mb ) {
+            display: none;
+        }
+    }
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-weight: bold;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    button {
+        background-color: $bg-gray;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 0.5em;
+        border: none;
+    }
+
+    @media screen and (max-width:$br-mb) {
+        display: none;
+
+    }
+}
+
+
+// mobile nav
+
+
+.mobile__nav {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    // color: white;
+    transition: all 0.5s ease-in-out;
+    .links{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        position: absolute;
+        font-size: 2.5em;
+        right: 1em;
+        top: 1em;
+        background: transparent;
+        border: none;
+        color: $text-gray;
+    }
+}
+
+.open-nav {
+
+    left: 0%;
 }

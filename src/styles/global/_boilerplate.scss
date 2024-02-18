@@ -1,0 +1,49 @@
+@use "./colors" as *;
+@use "./typo" as*;
+
+$br-tb:65.25em;
+$br-mb:31.25em;
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  // outline: 2px solid lawngreen;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $bg-white;
+  position: relative;
+  font-family:$text-font;
+  
+}
+
+.container {
+  max-width: 88em;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2.5em;
+  @media screen and (max-width:50em) {
+    padding: 0 0.5em;
+  }
+}
+
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: $text-black;
+}
+.avatar{
+  width: 50px;
+  border-radius: 50%;
+
+}
+
