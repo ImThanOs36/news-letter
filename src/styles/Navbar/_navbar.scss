@@ -152,6 +152,7 @@ header {
 .mobile__nav {
     display: flex;
     flex-direction: column;
+    gap: 5em;
     height: 100vh;
     width: 100%;
     z-index: 9999;
@@ -159,9 +160,9 @@ header {
     top: 0;
     left: -100%;
     bottom: 0;
-
-    justify-content: space-around;
-    align-items: center;
+    padding: 2em;
+    justify-content: start;
+    align-items:center;
     background: white;
     // color: white;
     transition: all 0.5s ease-in-out;
@@ -169,14 +170,24 @@ header {
         display: flex;
         flex-direction: column;
     }
+    
     .btn{
-        position: absolute;
-        font-size: 2.5em;
-        right: 1em;
-        top: 1em;
-        background: transparent;
+    
+        background-color: $bg-gray;
+        padding: 1em;
+        font-size: 1em;
+        border-radius: 0.5em;
         border: none;
-        color: $text-gray;
+    }
+    .mobile__menu-header{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // gap: 6em;
+        align-items: center;
+    }
+    .header-logo{
+        height: 25px;
     }
 }
 

@@ -16,6 +16,9 @@ function Navbar() {
 
 
     return (
+        <div className="container">
+
+        
         <div className="navigation">
 
             <header>
@@ -56,24 +59,31 @@ function Navbar() {
             </header>
 
 
-    
-                <div className={`mobile__nav ${nav ? "open-nav" : ""}`}>
+
+            <div className={`mobile__nav ${nav ? "open-nav" : ""}`}>
+                <div className="mobile__menu-header">
+                  
+        
+                        <img className='header-logo' src={logo} alt="mege News" />
+                
                     <button className='btn' onClick={openNav}>
                         <i className="fa-solid fa-xmark" />
                     </button>
-                    <ul className='links'>
+                </div>
+
+                <ul className='links'>
 
                     <li> <Link to={"/"}>Contact Us</Link>  </li>
                     <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
                     <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
-                    </ul>
-                </div>
-        
+                </ul>
+            </div>
+
 
 
         </div>
 
-
+        </div>
 
     )
 }

@@ -21,7 +21,7 @@ function Categories() {
     <>
       <div className="container" >
         <div className="categories__main">
-        <button className={`${vissible ? "visible" : "hidden"}`} onClick={() => handleScroll(-250)}><i className="fa-solid fa-angle-left"></i></button>
+        <button className='left-btn' onClick={() => handleScroll(-250)}><i className="fa-solid fa-angle-left"></i></button>
           <div
             className="categories"
             ref={divRef}
@@ -52,7 +52,7 @@ function Categories() {
        
 
               {/* Button to scroll right horizontally */}
-              <button onClick={() => handleScroll(300)}><i class="fa-solid fa-angle-right"></i></button>
+              <button onClick={() => handleScroll(300)}><i className="fa-solid fa-angle-right"></i></button>
             
 
 

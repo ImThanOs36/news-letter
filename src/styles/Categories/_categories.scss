@@ -2,9 +2,11 @@
 
 .categories__main{
     display: flex;
-    background-color: lawngreen;
+    background-color: $bg-gray;
     border-radius: 10px;
-
+    @media screen and (max-width:$br-mb) {
+        display: none;
+    }
     button{
         background: transparent;
         border: none;
@@ -12,6 +14,10 @@
 
         padding:0em 0.8em;
     }
+    .left-btn{
+        padding-right:0em;
+    }
+    
 }
 
 
@@ -46,7 +52,11 @@
     min-width: 170px;
     height: 40px;
     text-align: center;
-    background:$bg-gray;
+    background:white;
+    background-image: url("/src/images/cars/car1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
     @media screen and (max-width:$br-mb) {
         min-width: 170px;
     }
