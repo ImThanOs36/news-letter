@@ -1,0 +1,26 @@
+@use '../global/' as*;
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00ff7b;
+    padding: 0.5em;
+    border-radius: 10px;
+    
+    &__info{
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      span{
+        font-weight: bold;
+      }
+      
+  
+    }
+    &__avatar{
+      width: 50px;
+      border-radius: 10px;
+    }
+  
+  }

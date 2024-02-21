@@ -3,7 +3,7 @@
 header {
     max-width: 85rem;
     margin: 0 auto;
-    padding: 2em 1em;
+    padding: 2em 0em;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // background-color: lightgray;
@@ -131,13 +131,7 @@ header {
         gap: 1em;
     }
 
-    button {
-        background-color: $bg-gray;
-        padding: 1em;
-        font-size: 1em;
-        border-radius: 0.5em;
-        border: none;
-    }
+    
 
     @media screen and (max-width:$br-mb) {
         display: none;

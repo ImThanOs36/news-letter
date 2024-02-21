@@ -4,6 +4,7 @@
     display: flex;
     background-color: $bg-gray;
     border-radius: 10px;
+    scroll-behavior: smooth;
     @media screen and (max-width:$br-mb) {
         display: none;
     }
@@ -11,9 +12,12 @@
         background: transparent;
         border: none;
         border-radius: 10px;
-
         padding:0em 0.8em;
-    }
+        visibility: hidden;
+        @media screen and (max-width:$br-tb) {
+            visibility: visible;
+        }
+        }
     .left-btn{
         padding-right:0em;
     }
@@ -38,7 +42,7 @@
    
     border-radius: 10px;
     position: relative;
-
+    scroll-behavior: smooth;
 
 }
 

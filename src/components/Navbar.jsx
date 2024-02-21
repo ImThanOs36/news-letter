@@ -48,7 +48,7 @@ function Navbar() {
                             <span>Thanos </span>
                         </div>
 
-                        <button>
+                        <button className='bookmark'>
                             <i className="fa-regular fa-bookmark"></i>
                         </button>
                     </div>
