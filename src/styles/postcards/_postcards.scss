@@ -5,6 +5,7 @@
     grid-template-columns:repeat(6,300px) ;
     gap:1em;
     scroll-behavior: smooth;
+    padding: 1em 0.5em ;
     
     
     
@@ -13,7 +14,11 @@
         // grid-template-columns: repeat(6, 2fr);
         overflow: scroll;
     }
+    
 }
+.popular__posts::-webkit-scrollbar {
+    display: none;
+    }
 .cardsNav{
     display: flex;
     justify-content: space-between;

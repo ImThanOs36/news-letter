@@ -1,22 +1,24 @@
 import React from 'react'
 import Author from './Author'
 import img1 from '../images/avatar/acc_avatar.jpg'
-import img2 from '../images/avatar/acc_avatar.jpg'
-import img3 from '../images/avatar/acc_avatar.jpg'
-import img4 from '../images/avatar/acc_avatar.jpg'
-const images = [img1, img2, img3, img4]
-function Card(card) {
+import img2 from '../images/cars/car1.jpg'
+
+
+function Card() {
   return (
     <div className='card'>
 
-      <img className='card__image' src={img1} alt="" />
-      <div className='card__info'>
+      <img className='card__image' src={img2} alt="" />
+      <div>
 
-        <span>Lorem, ipsum dolor.</span>
-        <p>Lorem ipsusit amet cons Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nam.   e mias?</p>
+        <div className='card__info'>
+
+          <span className='card__heading'>What About The Plans we made?</span>
+          <p>I'll be deniel for atleast a little while what about the plans we made</p>
+        </div>
+
+        <Author img={img1} />
       </div>
-
-      <Author img={images[0]} />
 
     </div>
   )

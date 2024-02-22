@@ -1,0 +1,60 @@
+@use '../global/' as *;
+
+.new__posts {
+
+    .cardsNav {
+        .PostChange {
+            display: none;
+        }
+
+        .see-all {
+            padding: 0.5em 1em;
+            background-color: $bg-gray;
+            display: block;
+            border-radius: 5px;
+            font-weight: 500;
+
+
+        }
+
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+
+        @media screen and (max-width:$br-tb) {
+
+            flex-direction: column;
+
+            align-items: center;
+
+
+        }
+
+
+
+
+        .card {
+
+            flex-direction: row;
+            max-width: 45%;
+            gap: 1em;
+            align-items: center;
+
+            @media screen and (max-width:$br-tb) {
+                max-width: 100%;
+
+            }
+
+            @media screen and (max-width:$br-mb) {
+                flex-direction: column;
+
+            }
+
+
+        }
+    }
+}

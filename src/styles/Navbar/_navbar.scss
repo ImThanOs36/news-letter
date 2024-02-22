@@ -9,6 +9,10 @@ header {
     // background-color: lightgray;
     gap: 3em;
     width: 100%;
+    @media screen and (max-width:$br-mb) {
+    padding-bottom: 0em;
+        
+    }
 
     button {
         background-color: $bg-gray;
@@ -55,10 +59,7 @@ header {
         gap: 1em;
     }
 
-    @media screen and (max-width:$br-tb) {
-        padding-bottom: 1em;
-        
-    }
+    
 }
 
 .navigation ul {

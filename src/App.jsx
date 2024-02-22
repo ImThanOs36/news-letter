@@ -6,6 +6,7 @@ import './App.css'
 import Categories from './components/Categories/Categories'
 import HeroCard from './components/HeroCard'
 import PostCards from './components/PostCards'
+import NewPosts from './components/NewPosts'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <Categories/>
     <HeroCard/>
     <PostCards title="Popular Posts"/>
+    <NewPosts/>
     </>
   )
 }

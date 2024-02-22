@@ -1,29 +1,43 @@
 @use '../global' as *;
 
 
-.card{
+.card {
     max-width: 350px;
     padding: 0.75em;
-    border-radius: 15px;
-    background-color: lawngreen;
-    &__image{
+    border-radius: 10px;
+    background-color: $bg-white;
+    // outline: 2px solid black;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+
+    &__image {
 
         width: 100%;
         border-radius: 10px;
         object-fit: cover;
         height: 150px;
     }
-    &__info{
+
+    &__info {
         padding: 1em 0em;
-        p{
+
+
+        p {
             text-wrap: wrap;
+            font-weight: 400;
+            color: $text-gray;
         }
-        span{
-            font-weight: bold;
-        }
+
 
     }
-    
-    
-}
 
+    &__heading {
+        // padding-bottom: 1em;
+        font-weight: bold;
+
+
+    }
+
+
+}

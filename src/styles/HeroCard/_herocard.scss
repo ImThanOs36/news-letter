@@ -13,6 +13,10 @@
         grid-template-columns: repeat(1, 1fr);
 
     }
+    @media screen and (max-width:$br-mb) {
+     padding: 1em 0em;
+
+    }
 
 }
 
