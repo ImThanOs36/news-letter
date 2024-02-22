@@ -52,6 +52,8 @@ function PostCards(cards) {
           <Card id="2" />
           <Card id="3" />
           <Card id="4" />
+          <Card id="5" />
+          <Card id="6" />
         </div>
       </div>
     </div>

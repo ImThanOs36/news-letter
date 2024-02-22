@@ -31,8 +31,8 @@ function Navbar() {
                     </div>
                     <nav className='navigation'>
                         <ul>
-                            <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
-                            <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
+                            <li> <Link to={"/contact-us"}>Categories</Link>  </li>
+                            <li> <Link to={"/contact-us"}>About</Link>  </li>
                             <li> <Link to={"/contact-us"}>Contact Us</Link>  </li>
                         </ul>
                     </nav>

@@ -13,8 +13,7 @@ function Card(card) {
       <div className='card__info'>
 
         <span>Lorem, ipsum dolor.</span>
-        <p>Lorem ipsusit amet cons
-          e mias?</p>
+        <p>Lorem ipsusit amet cons Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, nam.   e mias?</p>
       </div>
 
       <Author img={images[0]} />
